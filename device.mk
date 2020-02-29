@@ -43,6 +43,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit MiThorium HALs
 $(call inherit-product-if-exists, hardware/mithorium/mithorium_qcom_hals.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
