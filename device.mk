@@ -32,6 +32,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit MiThorium HALs
+$(call inherit-product-if-exists, hardware/mithorium/mithorium_qcom_hals.mk)
+
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

@@ -136,6 +136,9 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
+ifneq ($(USE_MITHORIUM_QCOM_HALS),true)
+TARGET_ENFORCES_QSSI := true
+endif
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
