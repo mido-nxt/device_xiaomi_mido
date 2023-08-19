@@ -40,6 +40,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit MiThorium HALs
+$(call inherit-product-if-exists, hardware/mithorium/mithorium_qcom_hals.mk)
+
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -165,7 +168,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     gralloc.msm8953 \
-    hwcomposer.qcom \
+    hwcomposer.msm8953 \
     vendor.qti.hardware.memtrack-service
 
 # Device-specific settings
