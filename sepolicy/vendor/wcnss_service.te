@@ -1,5 +1,8 @@
 allow wcnss_service init:unix_stream_socket connectto;
 
 dontaudit wcnss_service serialno_prop:file read;
+dontaudit wcnss_service serialno_prop:file map;
 
 set_prop(wcnss_service, vendor_wifi_prop);
+allow wcnss_service sysfs_subsys:file r_file_perms;
+
