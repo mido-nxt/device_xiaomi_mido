@@ -304,6 +304,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     fstab.zram \
     init.goodix.sh \
     init.qcom.post_boot.sh \
