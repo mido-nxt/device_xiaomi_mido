@@ -86,12 +86,6 @@ blob_fixups: blob_fixups_user_type = {
     # Fingerprint - so name fixups
     ('vendor/lib64/hw/fingerprint.goodix.so', 'vendor/lib64/hw/gxfingerprint.default.so'):blob_fixup()
         .fix_soname(),
-    # IMS
-    'system_ext/lib64/lib-imscamera.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
-        .add_needed('libgui_shim.so')
-        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
     # Thermal
     'vendor/lib64/libthermalfeature.so': blob_fixup()
         .regex_replace(r'system/etc/', r'vendor/etc/'),
