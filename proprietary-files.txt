@@ -45,12 +45,6 @@ vendor/lib/libadm.so|0c12ba8a37d5c01f49d58c36b9fb84354ae568a9
 vendor/lib/libaudcal.so|ea9f62700c66d8dbaf4575e567fa67046ee66a49
 vendor/lib/libaudioalsa.so|50d2e0a9599e3a6c44345956d672cc5f222e3653
 vendor/lib/libdrc.so|7dbd6cef13d7e8ad18b1a49aa92a7d83da24c96a
-vendor/lib64/libacdb-fts.so|05760bb66071dbe10c10f105901710c18e4b20ce
-vendor/lib64/libacdbloader.so|cf69f69f856ea26adfcee9b4a60d6c72bb9e4b2b
-vendor/lib64/libacdbrtac.so|7e3c1165cc2290446eb5fe198011e652f7ac6d29
-vendor/lib64/libadiertac.so|bf301460c27cb2f78bfb7f0821c1c103da321ff8
-vendor/lib64/libaudcal.so|82e7f821044492fa42dcad1e1ace91561cc8e463
-vendor/lib64/libaudioalsa.so|686766d57db36b00710973872e40f614bb2fe11f
 
 # Audio ACDB - from FP3-REL-6.A.031.5-gms-fa7632b5-user
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|e1ca01987bfef191dc31a122a43a710ed9d96fca
