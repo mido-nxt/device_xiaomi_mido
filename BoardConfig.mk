@@ -123,9 +123,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w"
-
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 ifneq ($(USE_MITHORIUM_QCOM_HALS),true)
