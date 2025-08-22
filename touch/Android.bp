@@ -13,21 +13,21 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.xiaomi_mido",
-    init_rc: ["vendor.lineage.touch@1.0-service.xiaomi_mido.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.xiaomi_mido.xml"],
-    defaults: ["hidl_defaults"],
+    name: "vendor.lineage.touch-service.xiaomi_mido",
+    init_rc: ["vendor.lineage.touch-service.xiaomi_mido.rc"],
+    vintf_fragments: ["vendor.lineage.touch-service.xiaomi_mido.xml"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [
         "GloveMode.cpp",
         "KeyDisabler.cpp",
-        "service.cpp"
+        "service.cpp",
     ],
     shared_libs: [
         "libbase",
-        "libhidlbase",
+        "libbinder_ndk",
+        "liblog",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.lineage.touch-V1-ndk",
     ],
 }
