@@ -9,3 +9,7 @@ allow system_server sysfs_vibrator:file read;
 
 # zygote
 allow system_server app_zygote:process getpgid;
+
+# web browser crashes
+allow system_server webview_zygote:process setsched;
+allow system_server app_zygote:process setsched;
