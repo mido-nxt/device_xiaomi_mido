@@ -1901,7 +1901,7 @@ namespace implementation {
 	{
 		std::unordered_map<int, std::vector<struct target_therm_cfg>>::const_iterator it;
 		std::vector<struct target_therm_cfg>::iterator it_vec;
-		bool bcl_defined = false;
+		[[maybe_unused]] bool bcl_defined = false;
 		std::string soc_val;
 		int ct = 0;
 		bool read_ok = false;
