@@ -224,8 +224,6 @@ on property:sys.boot_completed=1
     write /sys/block/dm-1/queue/read_ahead_kb 512
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
-    # enable DT2W for xiaomi
-    write /proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w 1 
 
 # DSDS - Restart qcrild on data switch
 on property:persist.sys.radio.mobile_data_swap=1
