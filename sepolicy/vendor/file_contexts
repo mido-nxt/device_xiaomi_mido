@@ -69,4 +69,4 @@
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?                    u:object_r:kcal_dev:s0
 
 # Vibrator
-/sys/module/qti_haptics/parameters/vmax_mv_override          u:object_r:sysfs_vibrator:s0
+/sys/module/qti_haptics_mi8953/parameters/vmax_mv_override          u:object_r:sysfs_vibrator:s0

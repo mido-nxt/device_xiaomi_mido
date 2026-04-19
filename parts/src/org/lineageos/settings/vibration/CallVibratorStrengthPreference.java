@@ -35,7 +35,7 @@ public class CallVibratorStrengthPreference extends CustomSeekBarPreference {
     private static int mDefVal = mMaxVal - (mMaxVal - mMinVal) / 4;
     private Vibrator mVibrator;
 
-    private static final String FILE_LEVEL = "/sys/module/qti_haptics/parameters/vmax_mv_override";
+    private static final String FILE_LEVEL = "/sys/module/qti_haptics_mi8953/parameters/vmax_mv_override";
     private static final long[] testVibrationPattern = {0,250};
 
     public CallVibratorStrengthPreference(Context context, AttributeSet attrs) {
