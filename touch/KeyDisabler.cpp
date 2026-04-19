@@ -32,7 +32,7 @@ namespace vendor {
 namespace lineage {
 namespace touch {
 
-static constexpr const char kControlPath[] = "/proc/touchpanel/capacitive_keys_disable";
+static constexpr const char kControlPath[] = "/proc/sys/dev/xiaomi_msm8953_touchscreen/disable_keys";
 
 KeyDisabler::KeyDisabler() {
     has_key_disabler_ = (access(kControlPath, F_OK) == 0);
