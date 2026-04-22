@@ -302,7 +302,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
-$(call soong_config_set,qtipower,interaction_boost,true)
+$(call soong_config_set_bool,qtipower,interaction_boost,true)
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w)
 
 # Public libraries
