@@ -4,3 +4,5 @@ allow hal_power_default sysfs_graphics:file r_file_perms;
 allow hal_power_default sysctl_mi8953_ts:dir search;
 allow hal_power_default sysctl_mi8953_ts:dir r_dir_perms;
 allow hal_power_default sysctl_mi8953_ts:file rw_file_perms;
+
+allow hal_power_default vendor_hal_vnddisplayconfig_service:service_manager find;
