@@ -168,6 +168,11 @@ PRODUCT_PACKAGES += \
     hwcomposer.qcom \
     vendor.qti.hardware.memtrack-service
 
+PRODUCT_PACKAGES += \
+    lineage.frameworks.displayservice@1.0.vendor
+
+$(call soong_config_set_bool,surfaceflinger,register_displayservice,true)
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiDolby \
